@@ -1,0 +1,60 @@
+{"prompt_id": "t2icomp_color_0001", "prompt": "a green bench and a blue bowl", "category": "color"}
+{"prompt_id": "t2icomp_color_0002", "prompt": "a blue bench and a green bowl", "category": "color"}
+{"prompt_id": "t2icomp_color_0003", "prompt": "a green bench and a blue cake", "category": "color"}
+{"prompt_id": "t2icomp_color_0004", "prompt": "a blue bench and a green cake", "category": "color"}
+{"prompt_id": "t2icomp_color_0005", "prompt": "a brown horse and a blue vase", "category": "color"}
+{"prompt_id": "t2icomp_color_0006", "prompt": "a blue horse and a brown vase", "category": "color"}
+{"prompt_id": "t2icomp_color_0007", "prompt": "a blue backpack and a brown cow", "category": "color"}
+{"prompt_id": "t2icomp_color_0008", "prompt": "a brown backpack and a blue cow", "category": "color"}
+{"prompt_id": "t2icomp_color_0009", "prompt": "a blue backpack and a red book", "category": "color"}
+{"prompt_id": "t2icomp_color_0010", "prompt": "a red backpack and a blue book", "category": "color"}
+{"prompt_id": "t2icomp_color_0011", "prompt": "a brown bear and a red book", "category": "color"}
+{"prompt_id": "t2icomp_color_0012", "prompt": "a red bear and a brown book", "category": "color"}
+{"prompt_id": "t2icomp_color_0013", "prompt": "a red orange and a brown sheep", "category": "color"}
+{"prompt_id": "t2icomp_color_0014", "prompt": "a brown orange and a red sheep", "category": "color"}
+{"prompt_id": "t2icomp_color_0015", "prompt": "a green banana and a brown dog", "category": "color"}
+{"prompt_id": "t2icomp_color_0016", "prompt": "a brown banana and a green dog", "category": "color"}
+{"prompt_id": "t2icomp_color_0017", "prompt": "a green banana and a brown horse", "category": "color"}
+{"prompt_id": "t2icomp_color_0018", "prompt": "a brown banana and a green horse", "category": "color"}
+{"prompt_id": "t2icomp_color_0019", "prompt": "a blue cake and a red suitcase", "category": "color"}
+{"prompt_id": "t2icomp_color_0020", "prompt": "a red cake and a blue suitcase", "category": "color"}
+{"prompt_id": "t2icomp_spatial_0001", "prompt": "a giraffe next to a lamp", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0002", "prompt": "a girl on the top of a frog", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0003", "prompt": "a mouse on side of a key", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0004", "prompt": "a bee on the right of a refrigerator", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0005", "prompt": "a balloon on the right of a person", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0006", "prompt": "a cat on the top of a sofa", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0007", "prompt": "a desk on the right of a horse", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0008", "prompt": "a bicycle on the bottom of a girl", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0009", "prompt": "a sheep on the left of a lamp", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0010", "prompt": "a suitcase on the right of a mouse", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0011", "prompt": "a bird on side of a airplane", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0012", "prompt": "a pig on the bottom of a train", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0013", "prompt": "a mouse on the bottom of a vase", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0014", "prompt": "a fish on side of a sofa", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0015", "prompt": "a girl on the top of a refrigerator", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0016", "prompt": "a boy on the bottom of a bee", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0017", "prompt": "a chicken on the left of a girl", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0018", "prompt": "a woman on the left of a balloon", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0019", "prompt": "a table on the bottom of a dog", "category": "spatial"}
+{"prompt_id": "t2icomp_spatial_0020", "prompt": "a horse on side of a bicycle", "category": "spatial"}
+{"prompt_id": "t2icomp_numeracy_0001", "prompt": "two boys", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0002", "prompt": "six airplanes", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0003", "prompt": "five drums", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0004", "prompt": "one turtle", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0005", "prompt": "seven women", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0006", "prompt": "eight cars", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0007", "prompt": "two rabbits", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0008", "prompt": "six girls", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0009", "prompt": "one vase", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0010", "prompt": "eight bottles", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0011", "prompt": "three swans", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0012", "prompt": "three fish", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0013", "prompt": "four ships", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0014", "prompt": "six toys", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0015", "prompt": "one drum", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0016", "prompt": "five frogs", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0017", "prompt": "seven drums", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0018", "prompt": "seven computers", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0019", "prompt": "seven shrimp", "category": "numeracy"}
+{"prompt_id": "t2icomp_numeracy_0020", "prompt": "two dogs", "category": "numeracy"}

@@ -1,0 +1,2 @@
+dataset,metric,method_a,method_b,mean_diff,ci_low,ci_high,p_value_sign_test
+self300_stratified_60,csr_all,csr_select,fixed_seed0,0.0813888888888889,0.03888888888888889,0.12777777777777777,1.52587890625e-05

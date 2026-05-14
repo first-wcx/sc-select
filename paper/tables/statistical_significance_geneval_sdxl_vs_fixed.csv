@@ -1,0 +1,2 @@
+dataset,metric,method_a,method_b,mean_diff,ci_low,ci_high,p_value_sign_test
+geneval_sdxl,csr_all,csr_select,fixed_seed0,0.1523508137432188,0.1306509945750452,0.17224231464737794,1.6704779438076223e-52

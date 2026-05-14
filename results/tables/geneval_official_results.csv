@@ -1,0 +1,6 @@
+Method,Correct Images,Single Object,Two Object,Counting,Colors,Position,Color Attr,Overall
+Fixed Seed-0,52.44%,97.50%,64.65%,41.25%,81.91%,11.00%,27.00%,0.53885
+CLIPScore-Select,56.42%,98.75%,77.78%,45.00%,90.43%,9.00%,26.00%,0.57826
+SC-Select,60.58%,98.75%,78.79%,63.75%,85.11%,14.00%,33.00%,0.62232
+SC - Fixed gain,+8.14 pp,+1.25 pp,+14.14 pp,+22.50 pp,+3.20 pp,+3.00 pp,+6.00 pp,+0.08347
+SC - CLIPScore gain,+4.16 pp,+0.00 pp,+1.01 pp,+18.75 pp,-5.32 pp,+5.00 pp,+7.00 pp,+0.04406

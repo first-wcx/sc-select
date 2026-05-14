@@ -1,0 +1,11 @@
+dataset,baseline,csr_wins,baseline_wins,ties,missing,csr_win_rate_excl_ties
+flux60,clipscore_select,12,0,0,0,1.0
+flux60,fixed_seed0,12,0,0,0,1.0
+flux60,hpsv2_select,12,0,0,0,1.0
+flux60,image_reward_select,12,0,0,0,1.0
+flux60,pickscore_select,12,0,0,0,1.0
+self300_sdxl,clipscore_select,12,0,0,0,1.0
+self300_sdxl,fixed_seed0,12,0,0,0,1.0
+self300_sdxl,hpsv2_select,12,0,0,0,1.0
+self300_sdxl,image_reward_select,12,0,0,0,1.0
+self300_sdxl,pickscore_select,12,0,0,0,1.0

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SC-Select Semantic Contract",
+  "type": "object",
+  "required": ["prompt_id", "prompt", "objects", "attributes", "relations", "counts", "texts"],
+  "properties": {
+    "prompt_id": { "type": "string" },
+    "prompt": { "type": "string" },
+    "category": { "type": "string" },
+    "objects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "aliases": {
+            "type": "array",
+            "items": { "type": "string" },
+            "default": []
+          }
+        }
+      }
+    },
+    "attributes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["object", "attribute_type", "value"],
+        "properties": {
+          "object": { "type": "string" },
+          "attribute_type": { "type": "string" },
+          "value": { "type": "string" }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["subject", "relation", "object"],
+        "properties": {
+          "subject": { "type": "string" },
+          "relation": { "type": "string" },
+          "object": { "type": "string" }
+        }
+      }
+    },
+    "counts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["object", "number"],
+        "properties": {
+          "object": { "type": "string" },
+          "number": { "type": "integer", "minimum": 0 },
+          "operator": {
+            "type": "string",
+            "enum": ["eq", "gte", "lte"],
+            "default": "eq"
+          }
+        }
+      }
+    },
+    "texts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["content"],
+        "properties": {
+          "content": { "type": "string" },
+          "case_sensitive": { "type": "boolean", "default": false }
+        }
+      }
+    }
+  }
+}
+

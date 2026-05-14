@@ -1,0 +1,2 @@
+dataset,metric,method_a,method_b,mean_diff,ci_low,ci_high,p_value_sign_test
+self_built_50_rerun,csr_all,csr_select,clipscore_select,0.12555555555555556,0.07361111111111111,0.1872222222222222,1.9073486328125e-06

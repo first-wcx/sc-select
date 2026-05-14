@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SC-Select Perception Graph",
+  "type": "object",
+  "required": ["image_id", "prompt_id", "visible_objects", "relations", "ocr_texts", "parser"],
+  "properties": {
+    "image_id": { "type": "string" },
+    "prompt_id": { "type": "string" },
+    "visible_objects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "attributes": {
+            "type": "object",
+            "additionalProperties": {
+              "type": ["string", "number", "boolean", "null"]
+            },
+            "default": {}
+          },
+          "count": { "type": ["integer", "null"], "minimum": 0 }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["subject", "relation", "object"],
+        "properties": {
+          "subject": { "type": "string" },
+          "relation": { "type": "string" },
+          "object": { "type": "string" },
+          "confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "ocr_texts": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "parser": { "type": "string" },
+    "raw_response": { "type": ["string", "object", "null"] }
+  }
+}
+

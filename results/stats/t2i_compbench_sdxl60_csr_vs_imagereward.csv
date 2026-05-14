@@ -1,0 +1,2 @@
+dataset,metric,method_a,method_b,mean_diff,ci_low,ci_high,p_value_sign_test
+t2i_compbench_sdxl60,csr_all,csr_select,image_reward_select,0.125,0.075,0.175,3.814697265625e-06

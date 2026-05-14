@@ -1,0 +1,2 @@
+dataset,metric,method_a,method_b,mean_diff,ci_low,ci_high,p_value_sign_test
+self_built_300,csr_all,csr_select,hpsv2_select,0.13137301587301586,0.11005555555555556,0.15481746031746033,1.2037062152420224e-35

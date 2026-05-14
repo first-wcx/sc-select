@@ -1,0 +1,9 @@
+dataset,generator,parser,method,status,n_prompts,csr_obj,csr_attr,csr_rel,csr_count,csr_text,csr_all
+self-built-stratified-60,FLUX.1-schnell,Qwen2.5-VL-7B-Instruct,Fixed Seed-0,completed_from_existing_scores,60,0.7861111111111111,0.5833333333333333,0.1,0.125,0.8,0.5852777777777778
+self-built-stratified-60,FLUX.1-schnell,Qwen2.5-VL-7B-Instruct,Random Select mean,completed_from_existing_scores,60,0.7186111111111111,0.5683333333333332,0.12,0.025,0.8800000000000001,0.5391666666666666
+self-built-stratified-60,FLUX.1-schnell,Qwen2.5-VL-7B-Instruct,CLIPScore-Select Best-of-4,completed_from_existing_scores,60,0.7569444444444444,0.6416666666666666,0.1,0.0,0.85,0.5602777777777778
+self-built-stratified-60,FLUX.1-schnell,Qwen2.5-VL-7B-Instruct,ImageReward-Select Best-of-4,completed_from_existing_scores,60,0.75,0.6083333333333333,0.13333333333333333,0.0,0.9,0.5725
+self-built-stratified-60,FLUX.1-schnell,Qwen2.5-VL-7B-Instruct,PickScore-Select Best-of-4,completed_from_existing_scores,60,0.7472222222222222,0.65,0.13333333333333333,0.0,0.85,0.5641666666666667
+self-built-stratified-60,FLUX.1-schnell,Qwen2.5-VL-7B-Instruct,HPSv2-Select Best-of-4,completed_from_existing_scores,60,0.7902777777777777,0.5666666666666667,0.13333333333333333,0.05,0.9,0.59
+self-built-stratified-60,FLUX.1-schnell,Qwen2.5-VL-7B-Instruct,VLM-Direct-Select,not_available,60,,,,,,
+self-built-stratified-60,FLUX.1-schnell,Qwen2.5-VL-7B-Instruct,CSR-Select Best-of-4,completed_from_existing_scores,60,0.9013888888888889,0.6833333333333333,0.13333333333333333,0.125,1.0,0.6666666666666666

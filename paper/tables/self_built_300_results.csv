@@ -1,0 +1,9 @@
+dataset,generator,parser,method,status,n_prompts,csr_obj,csr_attr,csr_rel,csr_count,csr_text,csr_all
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,Fixed Seed-0,completed_from_existing_scores,300,0.5389166666666667,0.35666666666666663,0.02666666666666667,0.01,0.67,0.38186111111111115
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,Random Select mean,completed_from_existing_scores,300,0.5048420634920635,0.33466666666666667,0.017333333333333333,0.026000000000000002,0.522,0.34370873015873016
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,CLIPScore-Select Best-of-4,completed_from_existing_scores,300,0.5320674603174603,0.35,0.04666666666666667,0.005,0.64,0.37790079365079365
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,ImageReward-Select Best-of-4,completed_from_existing_scores,300,0.5146547619047619,0.35,0.04666666666666667,0.01,0.63,0.36859920634920634
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,PickScore-Select Best-of-4,completed_from_existing_scores,300,0.5038492063492064,0.3416666666666666,0.05333333333333334,0.015,0.7,0.36946031746031743
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,HPSv2-Select Best-of-4,completed_from_existing_scores,300,0.5465833333333333,0.35833333333333334,0.02,0.025,0.67,0.3808055555555555
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,VLM-Direct-Select,not_available,300,,,,,,
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,CSR-Select Best-of-4,completed_from_existing_scores,300,0.699734126984127,0.49,0.05333333333333334,0.065,0.89,0.5121785714285715

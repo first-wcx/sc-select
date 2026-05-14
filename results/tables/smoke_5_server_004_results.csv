@@ -1,0 +1,5 @@
+dataset,generator,parser,n_prompts,n_images,method,csr_obj,csr_attr,csr_rel,csr_count,csr_text,csr_all,source
+self-built smoke-5,SDXL,Qwen2.5-VL-7B-Instruct,5,20,All candidates mean,0.8500,0.5750,0.4500,,,0.6250,server_audits/server_004_smoke_5_20260513_1228/outputs/sc_select_summary.json
+self-built smoke-5,SDXL,Qwen2.5-VL-7B-Instruct,5,5,Fixed Seed-0,0.9000,0.7000,0.6000,,,0.7333,server_audits/server_004_smoke_5_20260513_1228/outputs/ablation_clipscore_vs_csr.json
+self-built smoke-5,SDXL,Qwen2.5-VL-7B-Instruct,5,5,CLIPScore-Select Best-of-4,0.8000,0.6000,0.4000,,,0.6000,server_audits/server_004_smoke_5_20260513_1228/outputs/ablation_clipscore_vs_csr.json
+self-built smoke-5,SDXL,Qwen2.5-VL-7B-Instruct,5,5,CSR-Select Best-of-4,0.9000,0.8000,0.8000,,,0.8333,server_audits/server_004_smoke_5_20260513_1228/outputs/ablation_clipscore_vs_csr.json

@@ -1,0 +1,2 @@
+dataset,metric,method_a,method_b,mean_diff,ci_low,ci_high,p_value_sign_test
+self300_stratified_60,csr_all,csr_select,pickscore_select,0.10250000000000001,0.06027777777777778,0.1513888888888889,4.76837158203125e-07

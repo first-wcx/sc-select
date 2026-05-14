@@ -1,0 +1,2 @@
+dataset,metric,method_a,method_b,mean_diff,ci_low,ci_high,p_value_sign_test
+t2i_compbench_sdxl60,csr_all,csr_select,clipscore_select,0.12916666666666668,0.07083333333333333,0.19583333333333333,3.0517578125e-05

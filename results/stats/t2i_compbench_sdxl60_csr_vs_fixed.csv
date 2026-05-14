@@ -1,0 +1,2 @@
+dataset,metric,method_a,method_b,mean_diff,ci_low,ci_high,p_value_sign_test
+t2i_compbench_sdxl60,csr_all,csr_select,fixed_seed0,0.17916666666666667,0.1125,0.25416666666666665,9.5367431640625e-07

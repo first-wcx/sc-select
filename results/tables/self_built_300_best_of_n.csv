@@ -1,0 +1,5 @@
+dataset,generator,parser,n_candidates,csr_all
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,1,0.38186111111111115
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,2,0.44759126984126985
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,3,0.4879007936507936
+self-built-300,SDXL,Qwen2.5-VL-7B-Instruct,4,0.5121785714285715

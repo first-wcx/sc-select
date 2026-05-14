@@ -1,0 +1,3 @@
+generator,dataset,n_prompts,n_candidates,method,csr_all,gain_vs_all_candidates_mean,source
+SDXL,GenEval,553,4,SC-Select Best-of-4,0.7821,+0.1458,server_004 audited SDXL GenEval table
+FLUX.1-schnell,GenEval,553,4,SC-Select Best-of-4,0.7880,+0.1130,server_001 audited FLUX GenEval output
