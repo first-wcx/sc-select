@@ -1,103 +1,73 @@
 # SC-Select
 
-SC-Select is a semantic-constraint-guided best-of-N selection framework for text-to-image generation. It parses candidate images into perception graphs, scores them against prompt-derived semantic contracts, and selects the candidate that best satisfies object, attribute, relation, counting, and text constraints.
+Semantic Contract-Guided Selection for Instruction-Adherent Text-to-Image Generation.
 
-This repository contains the public code, schemas, prompt/contract files, and lightweight result summaries used for the accompanying small-paper experiments. It intentionally does not include generated image corpora, model weights, server credentials, or local cache files.
+This repository contains the public code, schemas, prompt/contract data, summarized results, and manuscript materials for the SC-Select paper. SC-Select is a training-free post-generation selection method: it decomposes a text prompt into a semantic contract, parses each generated candidate image into a perception graph, scores candidates with Contract Satisfaction Rate (CSR), and selects the candidate with the highest CSR-All.
 
-## Repository Layout
+## Repository Contents
 
-```text
-configs/        JSON schemas for semantic contracts and perception graphs
-data/           Public prompt and contract JSONL files
-docs/           Experiment summaries and registry
-paper/tables/   CSV tables used by the paper draft
-requirements/   Base and GPU dependency notes
-results/        Lightweight result tables, stats, and human-eval summaries
-scripts/        Data construction, scoring, selection, evaluation, and GPU run scripts
-src/            Reusable CSR scoring and baseline selector modules
+- `src/`: core CSR scoring and selection baselines.
+- `scripts/`: experiment, scoring, baseline, statistics, human-evaluation, and table/figure generation scripts.
+- `configs/`: JSON schemas for semantic contracts and perception graphs.
+- `data/`: reviewed prompts, semantic contracts, and public benchmark subset metadata.
+- `results/tables/`: summarized result tables used by the manuscript.
+- `results/stats/`: bootstrap/sign-test outputs.
+- `results/selections/`: selected-output metadata and baseline summaries.
+- `paper/`: manuscript Markdown, revised sections, references, and paper tables.
+- `paper/figures/`: final manuscript figures.
+- `results/final_tables/`: additional final tables and ablations.
+- `provenance/`: result provenance and audit notes.
+
+Generated images, model weights, private server logs, credentials, raw remote audit folders, submission-system files, and large intermediate artifacts are intentionally excluded.
+
+## Main Result Snapshot
+
+On the reviewed 300-prompt SDXL benchmark with 1200 candidates, SC-Select improves CSR-All to `0.5122`, compared with `0.3819` for Fixed Seed-0, `0.3779` for CLIPScore-Select, `0.3686` for ImageReward-Select, `0.3695` for PickScore-Select, and `0.3808` for HPSv2-Select.
+
+See `RESULT_PROVENANCE_TABLE.md` and `provenance/` for the source files and scripts behind the reported numbers.
+
+## Environment
+
+CPU utilities:
+
+```powershell
+python -m pip install -r requirements/requirements_base.txt
 ```
 
-## Core Workflow
+GPU/model-dependent experiments require separate environments for generation, VLM parsing, and reward-model scoring. See `requirements/environment_notes.md` and `requirements/requirements_gpu.txt`.
 
-1. Generate multiple images per prompt with a text-to-image model.
-2. Parse each image with a VLM parser such as Qwen2.5-VL or InternVL2.5.
-3. Score each perception graph against the semantic contract.
-4. Select the best candidate per prompt with CSR-Select.
-5. Compare against Fixed Seed-0, Random Select, CLIPScore, ImageReward, PickScore, and HPSv2 where scores are available.
+## Minimal Usage
 
-## Quick Commands
+Run selection baselines from an existing candidate-score file. Full candidate-score files for large image pools are not included in this lightweight release, but the command below shows the expected interface:
 
-Run baseline selectors on an existing candidate score CSV:
-
-```bash
-python scripts/07_run_baselines.py \
-  --scores path/to/candidate_scores_all_rewards.csv \
-  --out-dir outputs/selections/example
+```powershell
+python scripts/07_run_baselines.py `
+  --scores path/to/candidate_scores_all_rewards.csv `
+  --out-dir results/selections/example
 ```
 
-Run paired bootstrap statistics from selected JSONL files:
+Run table generation from available summarized artifacts:
 
-```bash
-python scripts/08_bootstrap_stats.py \
-  --selected-a outputs/selections/example/csr_select_selected.jsonl \
-  --selected-b outputs/selections/example/clipscore_select_selected.jsonl \
-  --output outputs/stats/example.csv \
-  --dataset example \
-  --method-a csr_select \
-  --method-b clipscore_select
+```powershell
+python scripts/12_make_tables.py
 ```
 
-Analyze a filled pairwise human-evaluation sheet:
+Run figure generation:
 
-```bash
-python scripts/15_analyze_pairwise_human_eval.py \
-  --answers outputs/human_eval/annotation_response_filled.csv \
-  --key outputs/human_eval/pairwise_answer_key.csv \
-  --output outputs/human_eval/human_eval_summary.csv
+```powershell
+python scripts/13_make_figures.py
 ```
 
-## Data
+Some scripts expect generated images, perception graphs, candidate-score files, model caches, or remote GPU paths that are not included in this public repository.
 
-The main reviewed self-built prompt set is:
+## Data Notes
 
-- `data/prompts/scselect_complex_300.jsonl`
-- `data/contracts/scselect_complex_300_contracts.jsonl`
+The included `data/` files provide reviewed prompt and contract metadata. Large generated candidate images and raw model outputs are not included because of size, licensing, and reproducibility constraints. The public repository instead includes schemas, scripts, seeds/metadata where available, summarized score tables, and selected-output metadata.
 
-The FLUX stratified subset is:
+## Manuscript
 
-- `data/prompts/scselect_complex_stratified_60.jsonl`
-- `data/contracts/scselect_complex_stratified_60_contracts.jsonl`
+The main Markdown manuscript is in `paper/manuscript_sc_select_20260514.md`. The final submission PDF/DOCX files are not included in the public repository; they remain local submission artifacts.
 
-The auxiliary T2I-CompBench subset is:
+## License
 
-- `data/benchmarks/t2i_compbench_subset_60_prompts.jsonl`
-- `data/benchmarks/t2i_compbench_subset_60_contracts.jsonl`
-
-The T2I-CompBench contracts are automatically derived from formulaic public prompts and should be treated as an auxiliary stress-test subset rather than a manually curated benchmark.
-
-## Models
-
-Model weights are not stored in this repository. The experiments use public models loaded through their normal package or Hugging Face interfaces, including SDXL, FLUX.1-schnell, Qwen2.5-VL, InternVL2.5, CLIP, ImageReward, PickScore, and HPSv2.
-
-## Results
-
-Lightweight CSV summaries are under `results/` and `paper/tables/`. The full generated image pools and model caches are excluded because they are large and reproducible from the provided scripts and prompts.
-
-Key summary documents:
-
-- `docs/RESULTS_SUMMARY.md`
-- `docs/experiment_registry.csv`
-- `docs/human_eval_results_20260514.md`
-- `docs/t2i_compbench_extension_status_20260514.md`
-- `docs/parser_robustness_status_20260514.md`
-
-## Safety and Privacy
-
-This public release excludes:
-
-- SSH credentials and server inventory secrets
-- DPAPI-encrypted local secret files
-- generated image folders
-- model checkpoints and cache directories
-- unpublished source documents and local session logs
-
+License is not finalized in this prepared public snapshot. Add the intended open-source license before making the GitHub repository public.

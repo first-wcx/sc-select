@@ -17,7 +17,6 @@ source_materials/
 *.pdf
 
 # Large model or image artifacts
-*.png
 *.jpg
 *.jpeg
 *.webp
@@ -28,6 +27,14 @@ source_materials/
 *.bin
 hf_cache/
 ImageReward_cache/
+
+# Keep final manuscript figures, but ignore generated image pools.
+outputs/images/
+outputs/human_eval/**/images/
+final_outputs/
+!paper/figures/
+!paper/figures/*.png
+!paper/figures/*.pdf
 
 # Local OS/editor files
 .DS_Store

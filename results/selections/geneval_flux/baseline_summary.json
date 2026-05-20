@@ -1,0 +1,103 @@
+[
+  {
+    "method": "fixed_seed0",
+    "status": "completed_from_existing_scores",
+    "n_prompts": 553,
+    "n_selected": 553,
+    "csr_obj": 0.864376130198915,
+    "csr_attr": 0.2912371134020619,
+    "csr_rel": 0.06,
+    "csr_count": 0.4875,
+    "csr_text": "",
+    "csr_all": 0.6650090415913201
+  },
+  {
+    "method": "random_select_mean",
+    "status": "completed_from_existing_scores",
+    "n_prompts": 553,
+    "n_selected": 553,
+    "csr_obj": 0.8783001808318265,
+    "csr_obj_std": 0.007956600361663657,
+    "csr_attr": 0.25618556701030926,
+    "csr_attr_std": 0.04728802037599882,
+    "csr_rel": 0.048,
+    "csr_rel_std": 0.009797958971132711,
+    "csr_count": 0.6575,
+    "csr_count_std": 0.09340770846134702,
+    "csr_text": "",
+    "csr_all": 0.6809222423146474,
+    "csr_all_std": 0.008693103321317829
+  },
+  {
+    "method": "clipscore_select",
+    "status": "not_available",
+    "n_prompts": 553,
+    "n_selected": 0,
+    "csr_obj": "",
+    "csr_attr": "",
+    "csr_rel": "",
+    "csr_count": "",
+    "csr_text": "",
+    "csr_all": ""
+  },
+  {
+    "method": "image_reward_select",
+    "status": "not_available",
+    "n_prompts": 553,
+    "n_selected": 0,
+    "csr_obj": "",
+    "csr_attr": "",
+    "csr_rel": "",
+    "csr_count": "",
+    "csr_text": "",
+    "csr_all": ""
+  },
+  {
+    "method": "pickscore_select",
+    "status": "not_available",
+    "n_prompts": 553,
+    "n_selected": 0,
+    "csr_obj": "",
+    "csr_attr": "",
+    "csr_rel": "",
+    "csr_count": "",
+    "csr_text": "",
+    "csr_all": ""
+  },
+  {
+    "method": "hpsv2_select",
+    "status": "not_available",
+    "n_prompts": 553,
+    "n_selected": 0,
+    "csr_obj": "",
+    "csr_attr": "",
+    "csr_rel": "",
+    "csr_count": "",
+    "csr_text": "",
+    "csr_all": ""
+  },
+  {
+    "method": "vlm_direct_select",
+    "status": "not_available",
+    "n_prompts": 553,
+    "n_selected": 0,
+    "csr_obj": "",
+    "csr_attr": "",
+    "csr_rel": "",
+    "csr_count": "",
+    "csr_text": "",
+    "csr_all": ""
+  },
+  {
+    "method": "csr_select",
+    "status": "completed_from_existing_scores",
+    "n_prompts": 553,
+    "n_selected": 553,
+    "csr_obj": 0.9421338155515371,
+    "csr_attr": 0.48195876288659795,
+    "csr_rel": 0.16,
+    "csr_count": 0.8625,
+    "csr_text": "",
+    "csr_all": 0.7879746835443038
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "self_built_50_csr_results.csv": "server_004/paper_assets/tables/main_result.md",
+  "geneval_csr_results.csv": "server_004/paper_assets/tables/geneval_csr_result.md",
+  "geneval_official_results.csv": "server_004/paper_assets/tables/geneval_official_result.md",
+  "vqa_baseline_results.csv": "server_004/paper_assets/tables/vqa_select_result.md",
+  "cross_generator_results.csv": "server_001 and server_004 audited tables"
+}

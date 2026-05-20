@@ -1,0 +1,9 @@
+csr_all,csr_all_std,csr_attr,csr_attr_std,csr_count,csr_count_std,csr_obj,csr_obj_std,csr_rel,csr_rel_std,csr_text,method,n_prompts,n_selected,status
+0.6650090415913201,,0.2912371134020619,,0.4875,,0.864376130198915,,0.06,,,fixed_seed0,553,553,completed_from_existing_scores
+0.6809222423146474,0.008693103321317829,0.25618556701030926,0.04728802037599882,0.6575,0.09340770846134702,0.8783001808318265,0.007956600361663657,0.048,0.009797958971132711,,random_select_mean,553,553,completed_from_existing_scores
+,,,,,,,,,,,clipscore_select,553,0,not_available
+,,,,,,,,,,,image_reward_select,553,0,not_available
+,,,,,,,,,,,pickscore_select,553,0,not_available
+,,,,,,,,,,,hpsv2_select,553,0,not_available
+,,,,,,,,,,,vlm_direct_select,553,0,not_available
+0.7879746835443038,,0.48195876288659795,,0.8625,,0.9421338155515371,,0.16,,,csr_select,553,553,completed_from_existing_scores
